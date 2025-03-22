@@ -4,27 +4,36 @@
 
 </head>
 <body>
-	<h1>Dresseur de pokémon</h1>
+	<h1>Mon formulaire</h1>
 
 <form action="#">
 <fieldset>
-<legend>Nouveau dresseur</legend>
-<p>Nom *</p>
-<P input name="A" type="Text" value=""/></p>
-<p>Description</p>
-<p><textarea rows="3" cols="30	" name="H">
-</textarea>
-</p>
+<legend>Votre Nom et Prénom</legend>
+<p>Nom : <input name="A" type="Text" value="Nom ?"/></p>
+<p>Prénom : <input name="B" type="Text" value="Prénom ?"/></p>
 </fieldset>
-<p>Equipe</p>
-<p>Rouge <input name="D" type="radio" value="Rouge"/></p>
-<p>Jaune <input name="E" type="radio" value="Jaune"/></p>
-<p>Bleu <input name="F" type="radio" value="Bleu"/></p>
-<p>Anniversaire *</p>
-<p textarea rows="3" cols="30	" name="jj/mm/aaaa">
+<p>Mr <input name="C" type="radio" value="Mr"/> 
+Mme<input name="C" type="radio" value="Mme"/></p>
+<p>
+Chien <input name="D" type="checkbox" value="Chien"/>
+Chat <input name="E" type="checkbox" value="Chat"/>
+Poisson <input name="F" type="checkbox" value="Poisson"/>
+</p>
+<p>
+<select name="G" multiple>
+	<option>Pain</option>
+	<option>Citron</option>
+	<option>Orange</option>
+</select>
+</p>
+<p>
+<textarea rows="3" cols="30	" name="H">
+Laisez nous un commentaire
 </textarea>
+
 </p>
 <p><input type="submit" value="Envoyer" />
+<input type="reset"/>
 </p>
 
 
