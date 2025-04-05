@@ -12,6 +12,8 @@
 				height:100px;
 				}
     </style>
+</head>
+<head>
    <style>
         html {background-color: black}
 		#Madiv1{color:white;
