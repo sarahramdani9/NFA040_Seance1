@@ -6,6 +6,16 @@ function afficher(){
 		document.getElementById('mon_image1').style.display="Block";
 	}
 	else {document.getElementById('mon_image1').style.display="None";}
+function afficher(){
+	if(document.getElementById('choix2').checked){
+		document.getElementById('mon_image2').style.display="Block";
+	}
+	else {document.getElementById('mon_image2').style.display="None";}
+function afficher(){
+	if(document.getElementById('choix3').checked){
+		document.getElementById('mon_image3').style.display="Block";
+	}
+	else {document.getElementById('mon_image3').style.display="None";}
 function cacher(){
 	document.getElementById('image').style.display="None";
 	if(document.getElementById('choix1').checked){
@@ -25,14 +35,14 @@ function cacher(){
 <img id="mon_image1" src="https://fr.wikipedia.org/wiki/Rose#/media/Fichier:Pink_rose_(7837959486).jpg" />
 <button onclick="cacher()"></button>
 <h2>Image 2</h2>
-<input type="checkbox" id="choix1"/><br/></p>
+<input type="checkbox" id="choix2"/><br/></p>
 <button onclick="afficher()"></button>
-<img id="mon_image1" src="https://fr.wikipedia.org/wiki/Tulipe#/media/Fichier:Tulip_Tulipa_clusiana_'Lady_Jane'_Rock_Ledge_Plant_1730px.jpg" />
+<img id="mon_image2" src="https://fr.wikipedia.org/wiki/Tulipe#/media/Fichier:Tulip_Tulipa_clusiana_'Lady_Jane'_Rock_Ledge_Plant_1730px.jpg" />
 <button onclick="cacher()"></button>
 <h2>Image 3</h2>
-<input type="checkbox" id="choix1"/><br/></p>
+<input type="checkbox" id="choix3"/><br/></p>
 <button onclick="afficher()"></button>
-<img id="mon_image1" src="https://fr.wikipedia.org/wiki/Marguerite_commune#/media/Fichier:Leucanthemum_vulgare_2007-06-02_(plants).jpg" />
+<img id="mon_image3" src="https://fr.wikipedia.org/wiki/Marguerite_commune#/media/Fichier:Leucanthemum_vulgare_2007-06-02_(plants).jpg" />
 <button onclick="cacher()"></button>
 
 
