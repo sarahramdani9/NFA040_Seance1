@@ -6,11 +6,11 @@
 function afficher(){
 	
 	var saisie = parseInt(document.getElementById('V1').value);
+	var saisie = parseInt(document.getElementById('V2').value);
         var resultat = "";        
                 
         for (j=0; j<saisie ; j++){
                 for (i=0; i<saisie ; i++){
-                        somme i+j {
         resultat += "*";
 }
 else {resultat += "o";}
@@ -26,6 +26,7 @@ else {resultat += "o";}
 <body>
 <h1>Les étoiles</h1>
 <p>Saisir un chiffre : <input id="V1"/></p>
+<p>Saisir un chiffre : <input id="V2"/></p>
 <button onclick="afficher()">Afficher</button>
 <div id="result"></div>
 </body>
