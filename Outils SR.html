@@ -1,9 +1,12 @@
 <html>
 <head>
 <script>
-function affichage(){
-	document.getElementById('image')
-}
+function afficher(){
+	if(document.getElementById('choix1').checked){
+		document.getElementById('mon_image1').style.display="Block";
+	}
+	else {document.getElementById('mon_image1').style.display="None";}
+	
 function presenter(){
 	document.getElementById('image').style.display="Block";
 }
@@ -17,7 +20,10 @@ function cacher(){
 <body>
 <h1>Image(s) à afficher</h1>
 <h2>Image 1</h2>
-<button onclick="affichage()"></button>
+<input type="checkbox" id="choix1"/><br/></p>
+<button onclick="afficher()"></button>
+<img id="mon_image1" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Flower_poster_2.jpg?uselang=fr" />
+	
 <button onclick="presenter()"></button>
 <button onclick="cacher()"></button>
 <h2>Image 2</h2>
