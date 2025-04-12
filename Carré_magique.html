@@ -3,13 +3,12 @@
 <title>Mon Exercice JS N°2</title>
 <script>
 
-function afficher(){
+function resultat(){
 	
-	var saisie = parseInt(document.getElementById('V1').value);
-	var saisie = parseInt(document.getElementById('V2').value);
-	var somme = V1 + V2;
-        var resultat = "";        
-        document.getElementById('result').innerHTML = resultat;
+	var saisie1 = parseInt(document.getElementById('V1').value);
+	var saisie2 = parseInt(document.getElementById('V2').value);
+	var somme = saisie1 + saisie2;       
+        document.getElementById('résult').innerHTML = somme;
 }
 
 </script>
@@ -19,7 +18,7 @@ function afficher(){
 <h1>Les étoiles</h1>
 <p>Saisir un chiffre : <input id="V1"/></p>
 <p>Saisir un chiffre : <input id="V2"/></p>
-<button onclick="résultat()">Résultat</button>
+<button onclick="resultat()">Résultat</button>
 <div id="result"></div>
 </body>
 </html> 
