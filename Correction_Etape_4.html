@@ -1,14 +1,23 @@
 </html>
 <head>
 <script>
+var balle = 0
 function fct2(id){
 	document.getElementById("Br"+id).style.fill="red";
 }
 
 function lancer(){
 	var Val = Math.floor((Math.random() * 6)+1);
-	if(document.getElementById("Br"+(Val-1)).style.fill=="red"){alert("Perdu");}
-	else{alert("Gagné");}
+	if(document.getElementById("Br"+(Val-1)).style.fill=="red"){alert("Perdu");
+	gain = 0}
+	else{
+	if (balle == 1) {
+            gain = 10000;
+        } else if (balle == 2) {
+            gain = 100000;
+        } else if (balle == 3) {
+            gain = 1000000;
+        }alert("Gagné");}
 }
 
 
