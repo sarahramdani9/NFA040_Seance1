@@ -25,7 +25,7 @@ function bouger(){
 	//Code à créer pour faire bouger la boule enemy
 	var enemy = document.getElementById('enemy');
 	var enemyX = parseInt(enemy.getAttribute("cx"));
-			enemyX += 15;
+			enemyX -= 15;
                     	if(enemyX<=15){enemyX>=885;}
 			document.getElementById('enemy').setAttribute("cx", enemyX);
 		}
