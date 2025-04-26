@@ -39,8 +39,10 @@ function deplacement(evt) {
 			break;
                 // Droite 
                 case 39:
-
-
+			ballX += 15;
+                    	if(ballY>15){ballY=15;}
+			document.getElementById('ball').setAttribute("cy", ballX);
+			break;
 		// Haut 
                 case 38:
 
@@ -61,6 +63,6 @@ function deplacement(evt) {
 	<circle cx="450" cy="200" r="15" fill="tomato" id="ball" />
 	
 	</svg>
-<body>
+</body>
 </html>
 
