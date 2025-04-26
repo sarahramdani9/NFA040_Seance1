@@ -23,11 +23,8 @@ function principale(){
 function bouger(){
 
 	//Code à créer pour faire bouger la boule enemy
-	var enemyX = parseInt(document.getElementById('enemy').getAttribute("cx"));
-	var enemyY = parseInt(document.getElementById('enemy').getAttribute("cy"));
- switch (evt.keyCode) {
-		  // Droite 
-                case 41:
+	var enemy = document.getElementById('enemy');
+	var enemyX = parseInt(enemy.getAttribute("cx"));
 			enemyX += 15;
                     	if(enemyX<=15){enemyX>=885;}
 			document.getElementById('enemy').setAttribute("cx", enemyX);
