@@ -23,9 +23,16 @@ function principale(){
 function bouger(){
 
 	//Code à créer pour faire bouger la boule enemy
-	
+	var enemyX = parseInt(document.getElementById('enemy').getAttribute("cx"));
+	var enemyY = parseInt(document.getElementById('enemy').getAttribute("cy"));
+ switch (evt.keyCode) {
+		  // Droite 
+                case 41:
+			enemyX += 15;
+                    	if(enemyX<=15){enemyX>=885;}
+			document.getElementById('enemy').setAttribute("cx", enemyX);
+			break;
 }
-
 
 function deplacement(evt) {
 		   var ballX = parseInt(document.getElementById('ball').getAttribute("cx"));
