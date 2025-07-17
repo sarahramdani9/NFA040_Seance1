@@ -6,105 +6,134 @@
   <title>CV - RAMDANI Sarah</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Times New Roman', Times, serif;
       max-width: 800px;
       margin: 40px auto;
-      padding: 20px;
-      background-color: #f4f7fa;
-      color: #2c3e50;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      border-radius: 8px;
+      padding: 20px 30px;
+      background: #ffffff;
+      color: #333333;
+      line-height: 1.6;
     }
     header {
+      border-bottom: 2px solid #800020;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 3px solid #2980b9;
-      padding-bottom: 10px;
-      margin-bottom: 30px;
     }
     header h1 {
-      font-size: 2.2em;
-      color: #2980b9;
+      font-size: 2.4rem;
+      font-weight: bold;
       margin: 0;
-      flex: 1 1 250px;
+      color: #800020;
+      flex: 1 1 300px;
     }
     .contact-info {
-      flex: 1 1 250px;
+      flex: 1 1 280px;
       text-align: right;
-      font-size: 0.9em;
-      color: #555;
+      font-size: 0.9rem;
+      color: #555555;
+      font-weight: 400;
     }
     .contact-info p {
-      margin: 4px 0;
+      margin: 5px 0;
     }
     section {
-      margin-bottom: 30px;
+      margin-bottom: 35px;
     }
     h2 {
-      border-left: 5px solid #2980b9;
+      color: #800020;
+      font-size: 1.6rem;
+      margin-bottom: 18px;
+      font-weight: 600;
+      border-left: 5px solid #800020;
       padding-left: 10px;
-      color: #2980b9;
-      margin-bottom: 15px;
-      font-size: 1.4em;
     }
     h3 {
-      margin-bottom: 5px;
-      color: #34495e;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #444444;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    h3 img {
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+      opacity: 0.7;
     }
     em {
       font-style: italic;
-      color: #7f8c8d;
-      font-size: 0.9em;
+      color: #666666;
+      font-size: 0.9rem;
+      margin-bottom: 12px;
+      display: block;
     }
     ul {
       list-style-type: disc;
-      margin-left: 20px;
-      color: #555;
+      margin-left: 22px;
+      color: #444444;
+      font-size: 1rem;
+    }
+    p {
+      font-size: 1.05rem;
+      color: #444444;
     }
 
     /* Formulaire */
     form {
-      background: #ffffff;
-      padding: 20px;
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      padding: 20px 0;
+      border-top: 1px solid #ccc;
     }
     form label {
       display: block;
       margin-bottom: 6px;
       font-weight: 600;
-      color: #2980b9;
+      color: #800020;
+      font-size: 1rem;
     }
     form input[type="text"],
     form input[type="email"],
     form textarea {
       width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
+      padding: 10px 12px;
+      margin-bottom: 18px;
       border: 1px solid #ccc;
       border-radius: 4px;
-      font-family: inherit;
-      font-size: 1em;
+      font-family: 'Times New Roman', serif;
+      font-size: 1rem;
+      color: #333333;
       resize: vertical;
+      transition: border-color 0.3s ease;
+    }
+    form input[type="text"]:focus,
+    form input[type="email"]:focus,
+    form textarea:focus {
+      outline: none;
+      border-color: #800020;
+      background: #fff8f8;
     }
     form textarea {
-      min-height: 100px;
+      min-height: 90px;
     }
     form button {
-      background-color: #2980b9;
-      color: white;
-      padding: 12px 25px;
+      background-color: #800020;
+      color: #fff;
+      padding: 10px 28px;
       border: none;
       border-radius: 5px;
-      font-size: 1em;
+      font-size: 1rem;
+      font-weight: 600;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      letter-spacing: 0.05em;
     }
     form button:hover {
-      background-color: #1f6391;
+      background-color: #5a0015;
     }
 
     /* Responsive */
@@ -116,283 +145,6 @@
       .contact-info {
         text-align: center;
         margin-top: 15px;
-      }
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <h1>Ramdani Sarah</h1>
-    <div class="contact-info">
-      <p>📍 43 avenue Henri Barbusse, 93290 Tremblay-en-France</p>
-      <p>✉️ sarah.ramdani@gmail.com</p>
-      <p>📞 06 59 19 86 05</p>
-    </div>
-  </header>
-
-  <section>
-    <h2>🎯 Objectif personnel</h2>
-    <p>Intégrer une entreprise dynamique où je pourrai mettre à profit mes compétences en marketing stratégique et opérationnel.</p>
-  </section>
-
-  <section>
-    <h2>💼 Expérience professionnelle</h2>
-    <div>
-      <h3>Chef de produit - Dormakaba</h3>
-      <p><em>Novembre 2024 - Mai 2025</em></p>
-      <ul>
-        <li>Gestion et maintenance de l'offre</li>
-        <li>Suivi et analyse des ventes</li>
-        <li>Pricing</li>
-        <li>Formation des commerciaux</li>
-        <li>Création des supports de vente</li>
-        <li>Analyse du marché</li>
-      </ul>
-    </div>
-    <div>
-      <h3>Chef de produit - Acheteur - Lyreco</h3>
-      <p><em>Octobre 2021 - Février 2024</em></p>
-      <ul>
-        <li>Gestion et maintenance de l'offre</li>
-        <li>Suivi et analyse des ventes</li>
-        <li>Gestion des contrats fournisseurs</li>
-        <li>Négociation tarifaire et pricing</li>
-        <li>Création des plans de communication et promotion</li>
-        <li>Analyse du marché</li>
-        <li>Animation de la relation avec la force de vente</li>
-      </ul>
-    </div>
-  </section>
-
-  <section>
-    <h2>🎓 Formation académique</h2>
-    <p>Master 2 Marketing et Pratiques Commerciales - IAE de Paris (2015)</p>
-  </section>
-
-  <section>
-    <h2>🛠️ Compétences</h2>
-    <ul>
-      <li>Marketing</li>
-      <li>Analyse de marché</li>
-      <li>Maîtrise des outils Microsoft Office</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>⚽ Loisirs</h2>
-    <ul>
-      <li>Musique</li>
-      <li>Sport</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>📬 Contactez-moi</h2>
-    <form action="#" method="post" novalidate>
-      <label for="fullname">Nom complet</label>
-      <input type="text" id="fullname" name="fullname" placeholder="Votre nom complet" required />
-
-      <label for="email">Adresse mail</label>
-      <input type="email" id="email" name="email" placeholder="votre.email@example.com" required />
-
-      <label for="message">Message</label>
-      <textarea id="message" name="message" placeholder="Votre message ici..." required></textarea>
-
-      <button type="submit">Envoyer</button>
-    </form>
-  </section>
-
-</body>
-</html>
-Notes :
-
-Le formulaire ne fait rien côté serveur car action="#" et méthode POST sont par défaut ; tu peux connecter à un backend plus tard.
-
-Les champs sont requis pour une validation basique HTML5.
-
-Le style est cohérent avec le reste du CV.
-
-Dis-moi si tu souhaites que je t’aide à rendre ce formulaire fonctionnel (envoi par email, stockage, etc.) !
-
-
-
-Vous avez dit :
-je veux un style css plus esthétique, une police times new roman, couleur dominante bordeaux, logo des entreprises
-
-ChatGPT a dit :
-Ok, je te prépare une version plus esthétique avec :
-
-Police Times New Roman,
-
-Couleur dominante bordeaux (#800020),
-
-Logos simplifiés (images) pour tes entreprises,
-
-Un style plus élégant et aéré.
-
-Je vais intégrer des logos fictifs (tu pourras remplacer les URLs par les vrais logos). Voici le code complet :
-
-html
-Copier
-Modifier
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>CV - RAMDANI Sarah</title>
-  <style>
-    body {
-      font-family: 'Times New Roman', Times, serif;
-      max-width: 850px;
-      margin: 40px auto;
-      padding: 25px 30px;
-      background: #fff8f9;
-      color: #4b1a1f;
-      box-shadow: 0 0 20px rgba(128,0,32,0.15);
-      border-radius: 10px;
-    }
-    header {
-      border-bottom: 3px solid #800020;
-      padding-bottom: 15px;
-      margin-bottom: 35px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header h1 {
-      font-size: 2.8rem;
-      font-weight: bold;
-      margin: 0;
-      color: #800020;
-      flex: 1 1 300px;
-    }
-    .contact-info {
-      flex: 1 1 280px;
-      text-align: right;
-      font-size: 1rem;
-      line-height: 1.5;
-      color: #660018;
-      font-weight: 500;
-    }
-    .contact-info p {
-      margin: 5px 0;
-    }
-    section {
-      margin-bottom: 40px;
-    }
-    h2 {
-      border-left: 6px solid #800020;
-      padding-left: 12px;
-      color: #800020;
-      margin-bottom: 20px;
-      font-size: 1.8rem;
-      font-weight: 600;
-      letter-spacing: 0.05em;
-    }
-    h3 {
-      color: #660018;
-      font-size: 1.3rem;
-      margin: 0 0 8px 0;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      font-weight: 600;
-    }
-    h3 img {
-      width: 36px;
-      height: 36px;
-      object-fit: contain;
-      border-radius: 6px;
-      box-shadow: 0 0 6px rgba(128,0,32,0.2);
-    }
-    em {
-      font-style: italic;
-      color: #992b3e;
-      font-size: 0.95rem;
-      margin-bottom: 12px;
-      display: block;
-    }
-    ul {
-      list-style-type: square;
-      margin-left: 28px;
-      color: #550017;
-      font-size: 1rem;
-      line-height: 1.5;
-    }
-    p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-
-    /* Formulaire */
-    form {
-      background: #f9e6eb;
-      padding: 25px 30px;
-      border: 2px solid #800020;
-      border-radius: 12px;
-      box-shadow: 0 3px 15px rgba(128,0,32,0.25);
-    }
-    form label {
-      display: block;
-      margin-bottom: 8px;
-      font-weight: 700;
-      color: #800020;
-      font-size: 1rem;
-    }
-    form input[type="text"],
-    form input[type="email"],
-    form textarea {
-      width: 100%;
-      padding: 12px 14px;
-      margin-bottom: 20px;
-      border: 2px solid #992b3e;
-      border-radius: 8px;
-      font-family: 'Times New Roman', serif;
-      font-size: 1rem;
-      color: #4b1a1f;
-      resize: vertical;
-      transition: border-color 0.3s ease;
-    }
-    form input[type="text"]:focus,
-    form input[type="email"]:focus,
-    form textarea:focus {
-      outline: none;
-      border-color: #800020;
-      background: #fff0f2;
-    }
-    form textarea {
-      min-height: 110px;
-    }
-    form button {
-      background-color: #800020;
-      color: #fff8f9;
-      padding: 14px 36px;
-      border: none;
-      border-radius: 10px;
-      font-size: 1.1rem;
-      font-weight: 700;
-      cursor: pointer;
-      box-shadow: 0 5px 12px rgba(128,0,32,0.5);
-      transition: background-color 0.3s ease;
-      display: inline-block;
-      letter-spacing: 0.05em;
-    }
-    form button:hover {
-      background-color: #660018;
-    }
-
-    /* Responsive */
-    @media (max-width: 700px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-      }
-      .contact-info {
-        text-align: center;
-        margin-top: 18px;
       }
       h3 {
         justify-content: center;
@@ -412,12 +164,12 @@ Modifier
   </header>
 
   <section>
-    <h2>🎯 Objectif personnel</h2>
+    <h2>Objectif personnel</h2>
     <p>Intégrer une entreprise dynamique où je pourrai mettre à profit mes compétences en marketing stratégique et opérationnel.</p>
   </section>
 
   <section>
-    <h2>💼 Expérience professionnelle</h2>
+    <h2>Expérience professionnelle</h2>
     <div>
       <h3>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Dormakaba_logo.svg/1200px-Dormakaba_logo.svg.png" alt="Dormakaba logo" />
@@ -433,7 +185,7 @@ Modifier
         <li>Analyse du marché</li>
       </ul>
     </div>
-    <div style="margin-top: 30px;">
+    <div style="margin-top: 25px;">
       <h3>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Lyreco_logo.svg/2560px-Lyreco_logo.svg.png" alt="Lyreco logo" />
         Chef de produit - Acheteur - Lyreco
@@ -452,12 +204,12 @@ Modifier
   </section>
 
   <section>
-    <h2>🎓 Formation académique</h2>
+    <h2>Formation académique</h2>
     <p>Master 2 Marketing et Pratiques Commerciales - IAE de Paris (2015)</p>
   </section>
 
   <section>
-    <h2>🛠️ Compétences</h2>
+    <h2>Compétences</h2>
     <ul>
       <li>Marketing</li>
       <li>Analyse de marché</li>
@@ -466,7 +218,7 @@ Modifier
   </section>
 
   <section>
-    <h2>⚽ Loisirs</h2>
+    <h2>Loisirs</h2>
     <ul>
       <li>Musique</li>
       <li>Sport</li>
@@ -474,7 +226,7 @@ Modifier
   </section>
 
   <section>
-    <h2>📬 Contactez-moi</h2>
+    <h2>Contactez-moi</h2>
     <form action="#" method="post" novalidate>
       <label for="fullname">Nom complet</label>
       <input type="text" id="fullname" name="fullname" placeholder="Votre nom complet" required />
