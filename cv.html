@@ -9,62 +9,54 @@
       font-family: 'Times New Roman', Times, serif;
       max-width: 800px;
       margin: 40px auto;
-      padding: 20px 30px;
+      padding: 25px 30px;
       background: #ffffff;
-      color: #333333;
+      color: #222222;
       line-height: 1.6;
+      font-size: 16px;
     }
     header {
       border-bottom: 2px solid #800020;
       padding-bottom: 15px;
-      margin-bottom: 30px;
+      margin-bottom: 35px;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
     }
     header h1 {
-      font-size: 2.4rem;
+      font-size: 2.5rem;
       font-weight: bold;
       margin: 0;
       color: #800020;
       flex: 1 1 300px;
     }
     .contact-info {
-      flex: 1 1 280px;
+      flex: 1 1 300px;
       text-align: right;
-      font-size: 0.9rem;
-      color: #555555;
+      font-size: 0.95rem;
+      color: #444444;
       font-weight: 400;
     }
     .contact-info p {
-      margin: 5px 0;
+      margin: 4px 0;
     }
     section {
-      margin-bottom: 35px;
+      margin-bottom: 40px;
     }
     h2 {
       color: #800020;
       font-size: 1.6rem;
-      margin-bottom: 18px;
+      margin-bottom: 20px;
       font-weight: 600;
       border-left: 5px solid #800020;
-      padding-left: 10px;
+      padding-left: 12px;
     }
     h3 {
-      font-size: 1.15rem;
+      font-size: 1.2rem;
       font-weight: 600;
-      color: #444444;
-      margin-bottom: 8px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    h3 img {
-      width: 30px;
-      height: 30px;
-      object-fit: contain;
-      opacity: 0.7;
+      color: #333333;
+      margin-bottom: 10px;
     }
     em {
       font-style: italic;
@@ -76,17 +68,21 @@
     ul {
       list-style-type: disc;
       margin-left: 22px;
-      color: #444444;
+      color: #333333;
       font-size: 1rem;
+      padding-left: 0;
+    }
+    ul li {
+      margin-bottom: 6px;
     }
     p {
       font-size: 1.05rem;
-      color: #444444;
+      color: #333333;
     }
 
     /* Formulaire */
     form {
-      padding: 20px 0;
+      padding-top: 15px;
       border-top: 1px solid #ccc;
     }
     form label {
@@ -106,9 +102,10 @@
       border-radius: 4px;
       font-family: 'Times New Roman', serif;
       font-size: 1rem;
-      color: #333333;
+      color: #222222;
       resize: vertical;
       transition: border-color 0.3s ease;
+      box-sizing: border-box;
     }
     form input[type="text"]:focus,
     form input[type="email"]:focus,
@@ -146,9 +143,6 @@
         text-align: center;
         margin-top: 15px;
       }
-      h3 {
-        justify-content: center;
-      }
     }
   </style>
 </head>
@@ -157,9 +151,9 @@
   <header>
     <h1>Ramdani Sarah</h1>
     <div class="contact-info">
-      <p>📍 43 avenue Henri Barbusse, 93290 Tremblay-en-France</p>
-      <p>✉️ sarah.ramdani@gmail.com</p>
-      <p>📞 06 59 19 86 05</p>
+      <p>43 avenue Henri Barbusse, 93290 Tremblay-en-France</p>
+      <p>sarah.ramdani@gmail.com</p>
+      <p>06 59 19 86 05</p>
     </div>
   </header>
 
@@ -171,10 +165,7 @@
   <section>
     <h2>Expérience professionnelle</h2>
     <div>
-      <h3>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Dormakaba_logo.svg/1200px-Dormakaba_logo.svg.png" alt="Dormakaba logo" />
-        Chef de produit - Dormakaba
-      </h3>
+      <h3>Chef de produit - Dormakaba</h3>
       <p><em>Novembre 2024 - Mai 2025</em></p>
       <ul>
         <li>Gestion et maintenance de l'offre</li>
@@ -186,10 +177,7 @@
       </ul>
     </div>
     <div style="margin-top: 25px;">
-      <h3>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Lyreco_logo.svg/2560px-Lyreco_logo.svg.png" alt="Lyreco logo" />
-        Chef de produit - Acheteur - Lyreco
-      </h3>
+      <h3>Chef de produit - Acheteur - Lyreco</h3>
       <p><em>Octobre 2021 - Février 2024</em></p>
       <ul>
         <li>Gestion et maintenance de l'offre</li>
