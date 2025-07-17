@@ -1,5 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV - RAMDANI Sarah</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #f4f7fa;
+      color: #2c3e50;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px solid #2980b9;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+    header h1 {
+      font-size: 2.2em;
+      color: #2980b9;
+      margin: 0;
+      flex: 1 1 250px;
+    }
+    .contact-info {
+      flex: 1 1 250px;
+      text-align: right;
+      font-size: 0.9em;
+      color: #555;
+    }
+    .contact-info p {
+      margin: 4px 0;
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    h2 {
+      border-left: 5px solid #2980b9;
+      padding-left: 10px;
+      color: #2980b9;
+      margin-bottom: 15px;
+      font-size: 1.4em;
+    }
+    h3 {
+      margin-bottom: 5px;
+      color: #34495e;
+    }
+    em {
+      font-style: italic;
+      color: #7f8c8d;
+      font-size: 0.9em;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+      color: #555;
+    }
+
+    /* Formulaire */
+    form {
+      background: #ffffff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #2980b9;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 1em;
+      resize: vertical;
+    }
+    form textarea {
+      min-height: 100px;
+    }
+    form button {
+      background-color: #2980b9;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background-color: #1f6391;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .contact-info {
+        text-align: center;
+        margin-top: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ramdani Sarah</h1>
+    <div class="contact-info">
+      <p>📍 43 avenue Henri Barbusse, 93290 Tremblay-en-France</p>
+      <p>✉️ sarah.ramdani@gmail.com</p>
+      <p>📞 06 59 19 86 05</p>
+    </div>
+  </header>
+
   <section>
-    <h2>Loisirs</h2>
+    <h2>🎯 Objectif personnel</h2>
+    <p>Intégrer une entreprise dynamique où je pourrai mettre à profit mes compétences en marketing stratégique et opérationnel.</p>
+  </section>
+
+  <section>
+    <h2>💼 Expérience professionnelle</h2>
+    <div>
+      <h3>Chef de produit - Dormakaba</h3>
+      <p><em>Novembre 2024 - Mai 2025</em></p>
+      <ul>
+        <li>Gestion et maintenance de l'offre</li>
+        <li>Suivi et analyse des ventes</li>
+        <li>Pricing</li>
+        <li>Formation des commerciaux</li>
+        <li>Création des supports de vente</li>
+        <li>Analyse du marché</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Chef de produit - Acheteur - Lyreco</h3>
+      <p><em>Octobre 2021 - Février 2024</em></p>
+      <ul>
+        <li>Gestion et maintenance de l'offre</li>
+        <li>Suivi et analyse des ventes</li>
+        <li>Gestion des contrats fournisseurs</li>
+        <li>Négociation tarifaire et pricing</li>
+        <li>Création des plans de communication et promotion</li>
+        <li>Analyse du marché</li>
+        <li>Animation de la relation avec la force de vente</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>🎓 Formation académique</h2>
+    <p>Master 2 Marketing et Pratiques Commerciales - IAE de Paris (2015)</p>
+  </section>
+
+  <section>
+    <h2>🛠️ Compétences</h2>
+    <ul>
+      <li>Marketing</li>
+      <li>Analyse de marché</li>
+      <li>Maîtrise des outils Microsoft Office</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>⚽ Loisirs</h2>
     <ul>
       <li>Musique</li>
       <li>Sport</li>
@@ -7,16 +188,16 @@
   </section>
 
   <section>
-    <h2>Contactez-moi</h2>
+    <h2>📬 Contactez-moi</h2>
     <form action="#" method="post" novalidate>
       <label for="fullname">Nom complet</label>
       <input type="text" id="fullname" name="fullname" placeholder="Votre nom complet" required />
 
       <label for="email">Adresse mail</label>
-      <input type="email" id="email" name="email" placeholder="Votre adresse email" required />
+      <input type="email" id="email" name="email" placeholder="votre.email@example.com" required />
 
       <label for="message">Message</label>
-      <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+      <textarea id="message" name="message" placeholder="Votre message ici..." required></textarea>
 
       <button type="submit">Envoyer</button>
     </form>
