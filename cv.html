@@ -23,7 +23,7 @@
       align-items: center;
       border-bottom: 3px solid #2980b9;
       padding-bottom: 10px;
-      margin-bottom: 40px; /* plus d’espace sous header */
+      margin-bottom: 40px;
       gap: 10px;
     }
     header h1 {
@@ -47,7 +47,7 @@
       white-space: nowrap;
     }
     section {
-      margin-bottom: 40px; /* plus d’espace entre sections */
+      margin-bottom: 40px;
     }
     h2 {
       border-left: 5px solid #2980b9;
@@ -69,6 +69,19 @@
       list-style-type: disc;
       margin-left: 24px;
       color: #555;
+    }
+
+    /* Nouvelle grille 2 colonnes pour pro + formation */
+    .pro-formation-container {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+    .pro-formation-container > section {
+      flex: 1 1 48%;
+      min-width: 280px;
     }
 
     /* Formulaire */
@@ -109,12 +122,12 @@
     form input[type="text"]:focus,
     form input[type="email"]:focus,
     form textarea:focus {
-      border-color: #8b0000; /* bordeaux foncé */
+      border-color: #8b0000;
       box-shadow: 0 0 5px rgba(139,0,0,0.4);
       outline: none;
     }
     form button {
-      background-color: #8b0000; /* bordeaux */
+      background-color: #8b0000;
       color: white;
       padding: 14px 30px;
       border: none;
@@ -132,6 +145,14 @@
     }
 
     /* Responsive */
+    @media (max-width: 800px) {
+      .pro-formation-container {
+        flex-direction: column;
+      }
+      .pro-formation-container > section {
+        flex: 1 1 100%;
+      }
+    }
     @media (max-width: 600px) {
       header {
         flex-direction: column;
@@ -173,39 +194,41 @@
     <p>Intégrer une entreprise dynamique où je pourrai mettre à profit mes compétences en marketing stratégique et opérationnel.</p>
   </section>
 
-  <section>
-    <h2>💼 Expérience professionnelle</h2>
-    <div>
-      <h3>Chef de produit - Dormakaba</h3>
-      <p><em>Novembre 2024 - Mai 2025</em></p>
-      <ul>
-        <li>Gestion et maintenance de l'offre</li>
-        <li>Suivi et analyse des ventes</li>
-        <li>Pricing</li>
-        <li>Formation des commerciaux</li>
-        <li>Création des supports de vente</li>
-        <li>Analyse du marché</li>
-      </ul>
-    </div>
-    <div>
-      <h3>Chef de produit - Acheteur - Lyreco</h3>
-      <p><em>Octobre 2021 - Février 2024</em></p>
-      <ul>
-        <li>Gestion et maintenance de l'offre</li>
-        <li>Suivi et analyse des ventes</li>
-        <li>Gestion des contrats fournisseurs</li>
-        <li>Négociation tarifaire et pricing</li>
-        <li>Création des plans de communication et promotion</li>
-        <li>Analyse du marché</li>
-        <li>Animation de la relation avec la force de vente</li>
-      </ul>
-    </div>
-  </section>
+  <div class="pro-formation-container">
+    <section>
+      <h2>💼 Expérience professionnelle</h2>
+      <div>
+        <h3>Chef de produit - Dormakaba</h3>
+        <p><em>Novembre 2024 - Mai 2025</em></p>
+        <ul>
+          <li>Gestion et maintenance de l'offre</li>
+          <li>Suivi et analyse des ventes</li>
+          <li>Pricing</li>
+          <li>Formation des commerciaux</li>
+          <li>Création des supports de vente</li>
+          <li>Analyse du marché</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Chef de produit - Acheteur - Lyreco</h3>
+        <p><em>Octobre 2021 - Février 2024</em></p>
+        <ul>
+          <li>Gestion et maintenance de l'offre</li>
+          <li>Suivi et analyse des ventes</li>
+          <li>Gestion des contrats fournisseurs</li>
+          <li>Négociation tarifaire et pricing</li>
+          <li>Création des plans de communication et promotion</li>
+          <li>Analyse du marché</li>
+          <li>Animation de la relation avec la force de vente</li>
+        </ul>
+      </div>
+    </section>
 
-  <section>
-    <h2>🎓 Formation académique</h2>
-    <p>Master 2 Marketing et Pratiques Commerciales - IAE de Paris (2015)</p>
-  </section>
+    <section>
+      <h2>🎓 Formation académique</h2>
+      <p>Master 2 Marketing et Pratiques Commerciales - IAE de Paris (2015)</p>
+    </section>
+  </div>
 
   <section>
     <h2>🛠️ Compétences</h2>
