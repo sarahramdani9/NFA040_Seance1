@@ -63,6 +63,50 @@
       margin-left: 20px;
       color: #555;
     }
+
+    /* Formulaire */
+    form {
+      background: #ffffff;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    form label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #2980b9;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 1em;
+      resize: vertical;
+    }
+    form textarea {
+      min-height: 100px;
+    }
+    form button {
+      background-color: #2980b9;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    form button:hover {
+      background-color: #1f6391;
+    }
+
     /* Responsive */
     @media (max-width: 600px) {
       header {
@@ -141,6 +185,22 @@
       <li>Musique</li>
       <li>Sport</li>
     </ul>
+  </section>
+
+  <section>
+    <h2>📬 Contactez-moi</h2>
+    <form action="#" method="post" novalidate>
+      <label for="fullname">Nom complet</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Votre nom complet" required />
+
+      <label for="email">Adresse mail</label>
+      <input type="email" id="email" name="email" placeholder="votre.email@example.com" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Votre message ici..." required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
   </section>
 
 </body>
