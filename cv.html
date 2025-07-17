@@ -14,6 +14,7 @@
       color: #2c3e50;
       box-shadow: 0 0 15px rgba(0,0,0,0.1);
       border-radius: 8px;
+      line-height: 1.6;
     }
     header {
       display: flex;
@@ -22,35 +23,41 @@
       align-items: center;
       border-bottom: 3px solid #2980b9;
       padding-bottom: 10px;
-      margin-bottom: 30px;
+      margin-bottom: 40px; /* plus d’espace sous header */
+      gap: 10px;
     }
     header h1 {
       font-size: 2.2em;
       color: #2980b9;
       margin: 0;
-      flex: 1 1 250px;
+      flex: 1 1 300px;
     }
     .contact-info {
-      flex: 1 1 250px;
+      flex: 1 1 300px;
       text-align: right;
       font-size: 0.9em;
       color: #555;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      justify-content: center;
     }
     .contact-info p {
-      margin: 4px 0;
+      margin: 0;
+      white-space: nowrap;
     }
     section {
-      margin-bottom: 30px;
+      margin-bottom: 40px; /* plus d’espace entre sections */
     }
     h2 {
       border-left: 5px solid #2980b9;
       padding-left: 10px;
       color: #2980b9;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
       font-size: 1.4em;
     }
     h3 {
-      margin-bottom: 5px;
+      margin-bottom: 8px;
       color: #34495e;
     }
     em {
@@ -60,21 +67,22 @@
     }
     ul {
       list-style-type: disc;
-      margin-left: 20px;
+      margin-left: 24px;
       color: #555;
     }
 
     /* Formulaire */
     form {
       background: #ffffff;
-      padding: 20px;
+      padding: 22px 25px;
       border: 1px solid #ddd;
       border-radius: 6px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      max-width: 500px;
     }
     form label {
       display: block;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
       font-weight: 600;
       color: #2980b9;
     }
@@ -82,29 +90,45 @@
     form input[type="email"],
     form textarea {
       width: 100%;
-      padding: 10px;
-      margin-bottom: 15px;
+      padding: 12px 14px;
+      margin-bottom: 20px;
       border: 1px solid #ccc;
       border-radius: 4px;
       font-family: inherit;
       font-size: 1em;
       resize: vertical;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+      color: #2c3e50;
     }
-    form textarea {
-      min-height: 100px;
+    form input[type="text"]::placeholder,
+    form input[type="email"]::placeholder,
+    form textarea::placeholder {
+      color: #a0aabf;
+      font-style: italic;
+    }
+    form input[type="text"]:focus,
+    form input[type="email"]:focus,
+    form textarea:focus {
+      border-color: #8b0000; /* bordeaux foncé */
+      box-shadow: 0 0 5px rgba(139,0,0,0.4);
+      outline: none;
     }
     form button {
-      background-color: #2980b9;
+      background-color: #8b0000; /* bordeaux */
       color: white;
-      padding: 12px 25px;
+      padding: 14px 30px;
       border: none;
       border-radius: 5px;
-      font-size: 1em;
+      font-size: 1.1em;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      font-weight: 600;
+      box-shadow: 0 3px 6px rgba(139,0,0,0.4);
+      display: inline-block;
     }
     form button:hover {
-      background-color: #1f6391;
+      background-color: #5c0000;
+      box-shadow: 0 4px 8px rgba(92,0,0,0.6);
     }
 
     /* Responsive */
@@ -112,10 +136,23 @@
       header {
         flex-direction: column;
         text-align: center;
+        gap: 15px;
       }
       .contact-info {
         text-align: center;
-        margin-top: 15px;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        font-size: 0.85em;
+      }
+      .contact-info p {
+        white-space: normal;
+        margin: 0 10px;
+      }
+      form {
+        max-width: 100%;
+        padding: 15px 20px;
       }
     }
   </style>
